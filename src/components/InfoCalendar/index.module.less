@@ -1,0 +1,133 @@
+.contentCalendar {
+  width: 100%;
+  border-radius: 12px;
+  height: 100%;
+
+  :global {
+    .arco-calendar {
+      border: none;
+    }
+
+    .arco-calendar-cell-selected {
+      background: #2d67d5;
+      border-radius: 8px;
+      color: white;
+    }
+
+    .arco-calendar-month-cell-body {
+      display: flex;
+      padding: 0 10px;
+      overflow: auto;
+      gap: 32px !important;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      scroll-behavior: smooth;
+    }
+
+
+
+    .arco-calendar-cell {
+      border: none !important;
+      display: none;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: all 0.5s;
+
+
+      &:hover {
+        background-color: gray;
+      }
+    }
+
+    .arco-calendar-month-row {
+      align-items: center;
+      gap: 32px;
+
+    }
+
+    .arco-calendar-week-list {
+      display: none;
+    }
+
+    .arco-btn {
+      display: none;
+    }
+
+    .arco-calendar-cell-in-view {
+      border: none !important;
+      display: block;
+    }
+  }
+
+  .nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 56px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    font-family: Noto Sans SC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.85);
+    padding: 0 37px 0 16px;
+    box-sizing: border-box;
+    justify-content: space-between;
+
+    .down {
+      margin-left: 16px;
+      color: rgba(255, 255, 255, 0.45);
+      font-size: 14px;
+      cursor: pointer;
+
+      &:hover {
+        color: rgba(255, 255, 255, 0.85);
+      }
+    }
+
+    .arrow {
+      color: rgba(255, 255, 255, 0.45);
+
+      &:hover {
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+
+    .rightArrow {
+      color: rgba(255, 255, 255, 1);
+    }
+
+    .leftArrow {
+      color: rgba(255, 255, 255, 1);
+    }
+
+    .left {
+      margin-right: 30px;
+    }
+
+    .monthPicker {
+      position: absolute;
+      top: 28px;
+      z-index: 99;
+      left: 140px;
+      border: 1px solid #333;
+
+      border-radius: 8px;
+
+      // :global {
+
+      //   .arco-panel-month .arco-picker-date-value,
+      //   .arco-panel-quarter .arco-picker-date-value,
+      //   .arco-panel-year .arco-picker-date-value {
+      //     border-radius: 8px !important;
+      //   }
+      // }
+    }
+  }
+}

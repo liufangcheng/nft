@@ -1,0 +1,81 @@
+.allData {
+  padding: 0 24px;
+}
+
+.homeTitle {
+  font-family: 'Noto Sans SC';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.drops {
+  font-size: 18px;
+  font-family: medium;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.contentCalendar :global(.arco-calendar-month-row) {
+  // height: 96px;
+  align-items: center;
+}
+
+.contentCalendar :global(.arco-calendar-week-list) {
+  display: none !important;
+}
+
+.contentCalendar :global(.arco-calendar-header-right) {
+  display: none !important;
+}
+
+.contentCalendar :global(.arco-btn) {
+  display: none;
+}
+
+.contentCalendar :global(.arco-calendar-header) {
+  height: 56px;
+  padding: 0;
+  border-bottom: 1px solid var(--color-neutral-3);
+  align-items: center;
+}
+
+.contentCalendar :global(.arco-calendar-month-row,
+  .arco-calendar-cell) {
+  border: none !important;
+}
+
+.contentCalendar :global(.arco-calendar-month-cell-body) {
+  overflow: hidden;
+  display: flex;
+}
+
+.contentCalendar :global(.arco-calendar-date-content) {
+  display: none;
+}
+
+.contentCalendar :global(.arco-calendar-header-left) {
+  position: relative;
+}
+
+.contentCalendar :global(.arco-calendar-header-icon:not(.arco-calendar-header-icon-hidden)) {
+  position: absolute;
+  right: 70px;
+}
+
+.contentCalendar :global(.arco-calendar-header-value) {
+  padding-left: 24px;
+  font-size: 18px;
+}
+
+.contentCalendar :global(.arco-calendar-header-icon:not(:first-child)) {
+  position: absolute;
+  right: -5px;
+}
+
+.contentCalendar :global(.arco-calendar-cell .arco-calendar-date-circle) {
+  border-radius: 4px;
+}

@@ -1,0 +1,18 @@
+export const dms = {
+  'dms.TrendDiscord': 'Trend Discord',
+  'dms.name': 'Name',
+  'dms.ListedCount': 'Listed Count',
+  'dms.Floor': 'Floor',
+  'dms.1d%': '1d %',
+  'dms.Volume': 'Volume',
+  'dms.Market.Cap': 'Market Cap',
+  'dms.Holders': 'Holders',
+  'dms.Last.Sold': 'Last Sold',
+  'dms.NFT.Calendar': 'NFT Calendar',
+  'dms.drops': 'drops ',
+  'dms.Feature.NFT': 'Feature NFT ',
+  'dms.DMS': 'DMS ',
+  'dms.Discord.filter': 'Discord filter ',
+  'dms.Select.Blockchain': 'Select Blockchain',
+  'dms.Discord.follower': 'Discord follower',
+};

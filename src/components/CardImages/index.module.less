@@ -1,0 +1,119 @@
+.disCard {
+  width: 326px;
+  height: 170px;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 24px 16 16px 16px;
+  box-sizing: border-box;
+
+
+  &:hover {
+    border: 1px solid #2D67D5;
+  }
+
+
+}
+
+.Avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.disCard:hover .coverBlue {
+  visibility: visible
+}
+
+.discord_name {
+  flex: 1;
+  margin-left: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-family: 'Noto Sans SC';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.85);
+
+
+}
+
+.downCard {
+  width: 72px;
+  height: 56px;
+  border-radius: 4px;
+  display: 'flex';
+  justify-content: center;
+  align-items: center;
+  background: #1C1E22;
+  box-sizing: border-box;
+  padding: 8px 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  .score {
+    text-align: center;
+    font-family: 'Noto Sans SC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.35);
+  }
+
+  .option {
+    text-align: center;
+    font-family: 'Noto Sans SC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+  }
+}
+
+.coverBlue {
+  width: 100%;
+  height: 48px;
+  background: rgba(45, 103, 213, 0.85);
+  position: absolute;
+  bottom: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  visibility: hidden;
+  color: rgba(255, 255, 255, 0.65);
+  font-family: medium;
+
+  .divider {
+    :global {
+      .arco-divider-vertical {
+        border-left: 1px solid rgba(255, 255, 255, 0.12) !important
+      }
+    }
+  }
+
+  .img {
+    width: 21px;
+    height: 16px;
+    padding-right: 3px;
+    margin-top: 5px;
+  }
+
+  .img1 {
+    width: 12px;
+    height: 12px;
+    padding-right: 6px;
+  }
+}
+
+.coverBlue span:hover {
+  color: rgba(255, 255, 255, 1);
+  font-family: medium;
+}

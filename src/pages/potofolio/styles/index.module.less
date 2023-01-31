@@ -1,0 +1,281 @@
+.contentImg {
+  width: 100%;
+  height: 180px;
+  background-image: url("/images/8.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -20px;
+  position: relative;
+}
+
+.contentImg1 {
+  width: 100%;
+  height: 180px;
+  background-image: url("/svg/个人中心背景.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -20px;
+  position: relative;
+}
+
+.avaImage {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  top: 80px;
+  left: 24px;
+
+
+}
+
+.homeTitle {
+  font-family: Noto Sans SC;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  margin-top: 52px;
+}
+
+.loginTitle {
+  font-family: Noto Sans SC;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  text-decoration-line: underline;
+  color: #FFFFFF;
+  margin-top: 52px;
+  cursor: pointer;
+
+}
+
+.connectWallet {
+  font-family: Noto Sans SC;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration-line: underline;
+  color: #2D67D5;
+}
+
+.modal {
+  height: 320px;
+  width: 432px;
+  border-radius: 12px;
+
+  .emall {
+    width: 44px;
+    height: 32px;
+    margin: auto;
+    margin-top: 16px;
+  }
+
+  .input {
+    width: 384px;
+    height: 48px;
+    box-sizing: border-box;
+
+    :global(.arco-input-inner-wrapper) {
+      border-radius: 8px;
+    }
+  }
+
+  .emallText {
+    text-align: center;
+    font-family: Noto Sans SC;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 16px;
+
+  }
+
+  .changeEmail {
+    width: 384px;
+    height: 48px;
+    text-align: 'center';
+    line-height: 48px;
+    background-color: rgba(255, 255, 255, 0.12);
+    margin-top: '24px';
+    text-align: center;
+    margin-top: 24px;
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.65);
+
+  }
+}
+
+
+.modalDisconnect {
+  height: 320px;
+  width: 432px;
+  border-radius: 12px;
+
+  .disconnect {
+    width: 46px;
+    height: 28px;
+    margin: auto;
+    margin-top: 0px;
+  }
+
+
+
+  .disconnectText {
+    text-align: center;
+    font-family: Noto Sans SC;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 32px;
+    color: rgba(255, 255, 255, 0.85);
+
+
+
+  }
+
+  .disconnectMargin {
+    margin-top: 24px;
+  }
+
+  .serveSpace {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    font-style: Regular;
+    color: rgba(255, 255, 255, 0.65);
+    margin-top: 16px;
+  }
+
+  .yes {
+    width: 184px;
+    height: 48px;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 48px;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: #3D3F42;
+
+    &:hover {
+      border: 1px solid rgba(255, 255, 255, 0.45);
+      background-color: #2a2a2b;
+    }
+  }
+
+
+  .no {
+    width: 184px;
+    height: 48px;
+    background-color: #3D3F42;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 48px;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 16px;
+
+    &:hover {
+      border: 1px solid rgba(255, 255, 255, 0.45);
+      background-color: #2a2a2b;
+    }
+  }
+}
+
+
+
+.Settings {
+  position: relative;
+
+  &:hover .settingContent {
+    display: block;
+
+  }
+
+  &:hover .svgSettings {
+    color: rgba(255, 255, 255, 0.85);
+
+  }
+
+  &:hover svg:hover path {
+    fill: rgba(255, 255, 255, 0.85);
+  }
+
+  .svgSettings {
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.65);
+
+    span {
+      margin-left: 6px;
+    }
+
+  }
+
+  .settingContent {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    width: 160px;
+    height: 345px;
+    z-index: 999;
+    display: none;
+
+    .settingDown {
+      margin-top: 28px;
+      width: 160px;
+      height: 145px;
+      background-color: #15171C;
+      border: 1px solid #333333;
+      box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.45);
+      border-radius: 8px;
+      z-index: 999;
+
+      .changeEmail {
+        height: 48px;
+        line-height: 48px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        color: rgba(255, 255, 255, 0.65);
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.08);
+          color: rgba(255, 255, 255, 0.85);
+        }
+      }
+
+      .twitter {
+        height: 48px;
+        line-height: 48px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        color: rgba(255, 255, 255, 0.65);
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.08);
+          color: rgba(255, 255, 255, 0.85);
+        }
+      }
+
+      .logout {
+        height: 49px;
+        line-height: 49px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        color: rgba(255, 255, 255, 0.65);
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.08);
+          color: rgba(255, 255, 255, 0.85);
+        }
+
+      }
+    }
+
+  }
+
+
+}

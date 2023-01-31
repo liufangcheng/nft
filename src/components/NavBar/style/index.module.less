@@ -1,0 +1,284 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 0 0 20px;
+  background-color: var(--color-bg-1);
+  color: var(--color-text-1);
+  border-bottom: 1px solid var(--color-border);
+  height: 64px;
+}
+
+.logotext {
+  font-family: Montserrat;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+.right {
+  display: flex;
+  list-style: none;
+  padding-right: 20px;
+
+
+  li {
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+  }
+
+  .chinese {
+    width: 30px;
+    height: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    text-align: center;
+    line-height: 24px;
+    font-family: Noto Sans SC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.45);
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+      border: 1px solid rgba(255, 255, 255, 0.65);
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    &:hover .chineseDown {
+      display: block;
+    }
+
+    .chineseDown {
+      display: none;
+      position: absolute;
+      top: 15px;
+      width: 100px;
+      height: 200px;
+
+      .chineseDown1 {
+        width: 100px;
+        height: 72px;
+        background-color: #15171C;
+        text-align: left;
+        border-radius: 8px;
+        border: 1px solid #333333;
+        margin-top: 29.5px;
+        border-collapse: collapse;
+        overflow: hidden;
+      }
+
+      .china {
+        width: 100%;
+        height: 36px;
+        line-height: 36px;
+        font-family: Noto Sans SC;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.65);
+        padding: 0 12px;
+        box-sizing: border-box;
+
+        &:hover {
+          color: rgba(255, 255, 255, 0.85);
+          background: rgba(255, 255, 255, 0.08);
+        }
+      }
+
+      .english {
+        width: 100%;
+        height: 36px;
+        line-height: 36px;
+        font-family: Noto Sans SC;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.65);
+        padding: 0 12px;
+        box-sizing: border-box;
+
+        &:hover {
+          color: rgba(255, 255, 255, 0.85);
+          background: rgba(255, 255, 255, 0.08);
+        }
+      }
+    }
+
+  }
+
+  .loginAccount {
+    width: 30px;
+    height: 24px;
+    margin-top: -10px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 24px;
+    font-family: Noto Sans SC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.45);
+    cursor: pointer;
+  }
+
+  .account {
+    width: 30px;
+    height: 24px;
+    margin-top: -10px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 24px;
+    font-family: Noto Sans SC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.45);
+    position: relative;
+    cursor: pointer;
+
+    &:hover .accountDown {
+      display: block;
+    }
+
+    svg:hover path {
+      fill: rgba(255, 255, 255, 0.85);
+    }
+
+    .accountDown {
+      display: none;
+      position: absolute;
+      top: 24px;
+      width: 100px;
+      height: 200px;
+
+
+
+
+
+      .accountDown1 {
+        width: 100px;
+        height: 72px;
+        background-color: #15171C;
+        text-align: left;
+        border-radius: 8px;
+        border: 1px solid #333333;
+        overflow: hidden;
+        margin-top: 25.5px;
+      }
+
+      .china {
+        width: 100%;
+        height: 36px;
+        line-height: 36px;
+        font-family: Noto Sans SC;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.65);
+        padding: 0 12px;
+        box-sizing: border-box;
+
+        &:hover {
+          color: rgba(255, 255, 255, 0.85);
+          background: rgba(255, 255, 255, 0.08);
+        }
+      }
+
+      .english {
+        width: 100%;
+        height: 36px;
+        line-height: 36px;
+        font-family: Noto Sans SC;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.65);
+        padding: 0 12px;
+        box-sizing: border-box;
+
+        &:hover {
+          color: rgba(255, 255, 255, 0.85);
+          background: rgba(255, 255, 255, 0.08);
+        }
+      }
+    }
+
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--color-text-1);
+  }
+}
+
+.message {
+  background: #0BA873;
+  border-radius: 8px;
+  font-family: Noto Sans SC;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #FFFFFF;
+  padding: 15px 25px;
+}
+
+
+
+.username {
+  cursor: pointer;
+}
+
+.round {
+  :global(.arco-input-inner-wrapper) {
+    border-radius: 16px;
+  }
+
+  svg {
+    font-size: 16px;
+  }
+}
+
+.dropdown-icon {
+  margin-right: 8px;
+  font-size: 16px;
+  vertical-align: text-bottom;
+}
+
+.fixed-settings {
+  position: fixed;
+  top: 280px;
+  right: 0px;
+
+  svg {
+    font-size: 18px;
+    vertical-align: -4px;
+  }
+}
+
+.package {
+  cursor: pointer;
+
+  svg:hover path {
+    fill: rgba(255, 255, 255, 0.85);
+  }
+}
